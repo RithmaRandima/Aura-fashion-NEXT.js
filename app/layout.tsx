@@ -8,6 +8,8 @@ import Navbar from "@/components/Navbar";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import MobileNavbar from "@/components/MobileNavbar";
+import Footer from "@/components/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -37,7 +39,9 @@ export default function RootLayout({
         <HeaderTop />
         <HeaderMain />
         <Navbar />
+        <MobileNavbar />
         {children}
+        <Footer />
       </body>
     </html>
   );
